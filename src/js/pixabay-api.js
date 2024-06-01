@@ -11,6 +11,6 @@ export async function fetchImages(query, page = 1, perPage = 15) {
     return response.data;
   } catch (error) {
     console.error("Fetch error:", error);
-    trow error;
+    throw error;
   }
 }
